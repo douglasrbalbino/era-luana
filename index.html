@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Institucional</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .container {
+            max-width: 1280px;
+            max-height: 832px;
+            width: 100%;
+            height: 100%;
+            overflow-y: auto;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            position: relative;
+        }
+        .header_div {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            position: relative;
+        }
+        .header_div img {
+            width: 200px;
+            height: 200px;
+        }
+        .header_div ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            gap: 15px;
+            align-self: flex-end;
+        }
+        .header_div ul li {
+            margin: 0;
+        }
+        .user-button {
+            background: transparent;
+            border: none;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            padding: 0;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        .user-button img {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .header_div .border-line {
+            border-top: 2px solid green;
+            width: 100%;
+            margin-top: 10px;
+        }
+        section {
+            padding: 20px;
+            background-color: #f4f4f4;
+            margin: 10px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        section p {
+            font-size: 16px;
+            text-align: justify;
+        }
+        section img {
+            max-width: 100%;
+            height: auto;
+        }
+        .section-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+        .section-content .text {
+            flex: 1;
+            padding-right: 20px;
+            text-align: left;
+        }
+        .section-content .text button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            text-align: left;
+        }
+        .section-content .image {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-right: 0;
+        }
+        .section-content .image img {
+            max-width: 100%;
+            height: auto;
+        }
+        .institucional {
+            width: 1309px;
+            height: 423px;
+        }
+        .noticias {
+            width: 1351px;
+            height: 726px;
+        }
+        .novas_descobertas {
+            width: 1172px;
+            height: 645px;
+        }
+        .prevencoes {
+            width: 1518px;
+            height: 812px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: #f1f1f1;
+        }
+        .footer-section {
+            flex: 1;
+            margin: 0 10px;
+        }
+        .footer-section h2 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        .footer-section ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .footer-section ul li {
+            margin-bottom: 5px;
+        }
+        .footer-section ul li a {
+            text-decoration: none;
+            color: #000;
+        }
+        .logos {
+            display: flex;
+            justify-content: space-between;
+        }
+        .logo {
+            width: 114px;
+            height: 114px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header_div">
+                <div>
+                    <img src="https://via.placeholder.com/200" alt="Logo">
+                </div>
+                <div>
+                    <button class="user-button">
+                        <img src="https://via.placeholder.com/30" alt="Ícone de Usuário">
+                        <span>Área de membros</span>
+                    </button>
+                    <ul>
+                        <li>Institucional</li>
+                        <li>Notícias</li>
+                        <li>Novas Descobertas</li>
+                        <li>Prevenções e Recomendações</li>
+                        <li>Parceiros</li>
+                    </ul>
+                    <div class="border-line"></div>
+                </div>
+            </div>
+        </header>
+        <section class="institucional">
+            <div class="section-content">
+                <div class="text">
+                    <h2>Institucional</h2>
+                    <p>Bem-vindo ao nosso laboratório. Aqui, nos dedicamos a fornecer as melhores soluções científicas e tecnológicas para nossos clientes. Nossa equipe de especialistas está comprometida com a inovação e a excelência em todas as áreas de pesquisa. Trabalhamos continuamente para desenvolver novos métodos e tecnologias que possam ser aplicados em diversos setores, desde a saúde até a engenharia. Nosso objetivo é sempre superar as expectativas e contribuir para um futuro mais sustentável e tecnológico.</p>
+                    <button onclick="location.href='#'">Exibir mais</button>
+                </div>
+                <div class="image">
+                    <img src="https://via.placeholder.com/800x400" alt="Imagem Institucional">
+                </div>
+            </div>
+        </section>
+        <section class="noticias">
+            <div class="section-content">
+                <div class="text">
+                    <h2>Notícias</h2>
+                    <p>Bem-vindo ao nosso laboratório. Aqui, nos dedicamos a fornecer as melhores soluções científicas e tecnológicas para nossos clientes. Nossa equipe de especialistas está comprometida com a inovação e a excelência em todas as áreas de pesquisa. Trabalhamos continuamente para desenvolver novos métodos e tecnologias que possam ser aplicados em diversos setores, desde a saúde até a engenharia. Nosso objetivo é sempre superar as expectativas e contribuir para um futuro mais sustentável e tecnológico.</p>
+                    <button onclick="location.href='#'">Exibir mais</button>
+                </div>
+                <div class="image">
+                    <img src="https://via.placeholder.com/800x400" alt="Imagem de Notícias">
+                </div>
+            </div>
+        </section>
+        <section class="novas_descobertas">
+            <div class="section-content">
+                <div class="text">
+                    <h2>Novas Descobertas</h2>
+                    <p>Bem-vindo ao nosso laboratório. Aqui, nos dedicamos a fornecer as melhores soluções científicas e tecnológicas para nossos clientes. Nossa equipe de especialistas está comprometida com a inovação e a excelência em todas as áreas de pesquisa. Trabalhamos continuamente para desenvolver novos métodos e tecnologias que possam ser aplicados em diversos setores, desde a saúde até a engenharia. Nosso objetivo é sempre superar as expectativas e contribuir para um futuro mais sustentável e tecnológico.</p>
+                    <button onclick="location.href='#'">Exibir mais</button>
+                </div>
+                <div class="image">
+                    <img src="https://via.placeholder.com/800x400" alt="Imagem de Novas Descobertas">
+                </div>
+            </div>
+        </section>
+        <section class="prevencoes">
+            <div class="section-content">
+                <div class="text">
+                    <h2>Prevenções</h2>
+                    <p>Bem-vindo ao nosso laboratório. Aqui, nos dedicamos a fornecer as melhores soluções científicas e tecnológicas para nossos clientes. Nossa equipe de especialistas está comprometida com a inovação e a excelência em todas as áreas de pesquisa. Trabalhamos continuamente para desenvolver novos métodos e tecnologias que possam ser aplicados em diversos setores, desde a saúde até a engenharia. Nosso objetivo é sempre superar as expectativas e contribuir para um futuro mais sustentável e tecnológico.</p>
+                    <button onclick="location.href='#'">Exibir mais</button>
+                </div>
+                <div class="image">
+                    <img src="https://via.placeholder.com/800x400" alt="Imagem de Prevenções">
+                </div>
+            </div>
+        </section>
+        <section class="membros_fundadores">
+            <h2>Membros Fundadores</h2>
+            <img src="https://via.placeholder.com/800x400" alt="Imagem dos Membros Fundadores">
+            <p>Detalhes sobre os membros fundadores da sua empresa e suas contribuições.</p>
+        </section>
+        <div class="footer">
+            <div class="footer-section">
+                <h2>Mapa do Site</h2>
+                <ul>
+                    <li><a href="#">Institucional</a></li>
+                    <li><a href="#">Notícias</a></li>
+                    <li><a href="#">Novas Descobertas</a></li>
+                    <li><a href="#">Prevenções e Recomendações</a></li>
+                    <li><a href="#">Parceiros</a></li>
+                    <li><a href="#">Área de Membros</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h2>Fale Conosco</h2>
+                <ul>
+                    <li><a href="#">Atendimento</a></li>
+                    <li><a href="#">Seja um Parceiro</a></li>
+                    <li><a href="#">Ouvidoria</a></li>
+                    <li><a href="#">Trabalhe Conosco</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h2>Transparência</h2>
+                <ul>
+                    <li><a href="#">Política de Privacidade</a></li>
+                    <li><a href="#">Termos de Uso</a></li>
+                    <li><a href="#">Canal de Denúncias</a></li>
+                    <li><a href="#">Código de Ética e Conduta</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h2>Parceiros</h2>
+                <div class="logos">
+                    <img src="logo1.png" alt="Logo 1" class="logo">
+                    <img src="logo2.png" alt="Logo 2" class="logo">
+                    <img src="logo3.png" alt="Logo 3" class="logo">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
